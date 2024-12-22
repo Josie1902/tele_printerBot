@@ -31,6 +31,14 @@ On Windows: `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+4. Create Telegram token
+
+Search for @botfather in Telegram and create a token. Update the token variable under .env file
+
+```bash
+export BOT_TOKEN="apitoken here"
+```
+
 ## Available Commands
 
 Once the bot is running, you can use the following commands:
