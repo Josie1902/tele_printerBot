@@ -13,7 +13,7 @@ git clone <repository-url>
 cd <repository-name>
 ```
 
-2. Create a Virtual Environment: Create a Python virtual environment to manage dependencies:
+2. Create a Virtual Environment: Create a Python virtual environment to manage dependencies
 
 ```bash
 python3 -m venv venv/
@@ -46,7 +46,7 @@ Once the bot is running, you can use the following commands:
 - /start: Initializes the bot and lists available commands.
 - /help: Displays a list of available commands with descriptions.
 - /status: Displays the current status of all printers (e.g., working or down).
-- /update: Updates the status of a printer. You can specify if the printer is "down" or "working." Users can leave a comment about the status. If the status is updated to "down," a global counter tracking the number of down printers will be incremented by 1.
+- /update: Updates the status of a printer.
 
 ## Bot Behavior and Logic
 
