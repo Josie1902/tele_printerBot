@@ -1,1 +1,45 @@
 # tele_printerBot
+
+This project allows you to update and check printer statuses in a school environment using a Telegram bot.
+
+## Getting Started
+
+Follow these steps to set up and run the bot:
+
+1. Clone the Project: Clone the repository to your local machine
+
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+2. Create a Virtual Environment: Create a Python virtual environment to manage dependencies:
+
+```bash
+python3 -m venv venv/
+```
+
+Activate the virtual environment:
+
+On macOS/Linux: `source venv/bin/activate`
+
+On Windows: `venv\Scripts\activate`
+
+3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Available Commands
+
+Once the bot is running, you can use the following commands:
+
+- /start: Initializes the bot and lists available commands.
+- /help: Displays a list of available commands with descriptions.
+- /status: Displays the current status of all printers (e.g., working or down).
+- /update: Updates the status of a printer. You can specify if the printer is "down" or "working." Users can leave a comment about the status. If the status is updated to "down," a global counter tracking the number of down printers will be incremented by 1.
+
+## Bot Behavior and Logic
+
+- /update: Updates the printer status. If the printer is marked as "down," the global down counter will be incremented by 1. Users can also leave a comment along with the status update.
